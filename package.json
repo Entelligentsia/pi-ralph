@@ -1,0 +1,9 @@
+{
+  "name": "ralph-loop-anything",
+  "version": "1.0.0",
+  "description": "Dynamic iterative Ralph loop extension for pi - Generator→Critique→Judge cycle",
+  "private": true,
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
