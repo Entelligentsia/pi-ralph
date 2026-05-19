@@ -1,6 +1,6 @@
 {
   "name": "@entelligentsia/ralph-loop-anything",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iterative goal-achievement loop for pi — Generator→Critique→Judge, streaming output as it happens",
   "keywords": [
     "pi",
@@ -31,7 +31,9 @@
     "argParser.ts"
   ],
   "pi": {
-    "extensions": ["./index.ts"]
+    "extensions": [
+      "./index.ts"
+    ]
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": ">=0.1.0"

@@ -1,6 +1,30 @@
 # ralph-loop-anything
 
-Iterative goal-achievement loop: Generator → Critique → Judge, repeated until the goal is met or iterations exhausted.
+**A [pi](https://github.com/earendil-works/pi) extension** — iterative goal-achievement loop with Generator → Critique → Judge agents.
+
+[![npm](https://img.shields.io/npm/v/@entelligentsia/ralph-loop-anything?style=flat-square)](https://www.npmjs.com/package/@entelligentsia/ralph-loop-anything)
+
+## Install
+
+```
+pi install npm:@entelligentsia/ralph-loop-anything
+```
+
+Or pin a version:
+
+```
+pi install npm:@entelligentsia/ralph-loop-anything@1.0.1
+```
+
+From GitHub:
+
+```
+pi install git:github.com:Entelligentsia/ralph-loop-anything
+```
+
+## What It Does
+
+Give it a goal. It loops — generate, critique, judge — until the goal is met or iterations run out.
 
 Each agent's system prompt is dynamically generated from the goal, so they're domain-aligned from the start. Output streams to chat as it happens — like `tail -f`.
 
@@ -20,8 +44,8 @@ Each agent's system prompt is dynamically generated from the goal, so they're do
 2. Prompt generation   →  domain + agent prompts tailored to the goal
 3. Loop (up to N):
    ├─ Generate   →  produces a result
-   ├─ Critique    →  identifies problems, suggests improvements
-   └─ Judge       →  { done: true/false, reason }
+   ├─ Critique   →  identifies problems, suggests improvements
+   └─ Judge      →  { done: true/false, reason }
        └── if not done: feeds result + criticism back to Generator
 4. Final message with verdict
 ```
