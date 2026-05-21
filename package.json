@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Iterative goal-achievement loop for pi — Generator→Critique→Judge, streaming output as it happens",
   "keywords": [
+    "pi-package",
     "pi",
     "pi-coding-agent",
     "llm",
