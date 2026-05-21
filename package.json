@@ -1,6 +1,6 @@
 {
   "name": "@entelligentsia/pi-ralph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iterative goal-achievement loop for pi — Generator→Critique→Judge, streaming output as it happens",
   "keywords": [
     "pi-package",
